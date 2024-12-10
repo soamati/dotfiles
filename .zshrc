@@ -60,12 +60,6 @@ alias pbpaste='xsel --clipboard --output'
 # imgcat for wezterm
 alias icat='wezterm imgcat'
 
-# myrofi
-rofi_dir="$HOME/.config/rofi/launchers/type-1"
-theme='style-1'
-
-alias myrofi="rofi -show drun -theme ${dir}/${theme}.rasi"
-
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
