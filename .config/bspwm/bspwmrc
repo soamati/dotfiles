@@ -1,0 +1,36 @@
+#! /bin/sh
+picom &
+nitrogen --restore &
+
+caffeine-indicator &
+caffeine start --activate &
+
+pgrep -x sxhkd >/dev/null || sxhkd &
+
+bspc monitor DisplayPort-2 -d 1 2 3 4 5
+bspc monitor HDMI-A-0 -d 0
+
+bspc config border_width 1
+bspc config window_gap 0
+
+bspc config -m DisplayPort-2 window_gap 0
+bspc config -m HDMI-A-0 window_gap 1
+
+bspc config split_ratio 0.5
+
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+bspc config top_monocle_padding 0
+bspc config bottom_monocle_padding 0
+bspc config left_monocle_padding 0
+bspc config right_monocle_padding 0
+
+bspc config focused_border_color "#ff0000"
+bspc config normal_border_color "#141415"
+
+# rules (not working)
+bspc rule -a qbittorrent state=floating rectangle=1280x720+0+0 center=true
+
+"$HOME/.config/polybar/launch.sh"
+xsetroot -cursor_name left_ptr &
