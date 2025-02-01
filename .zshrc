@@ -83,7 +83,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=magenta'
 
 # fzf oldworld
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-    --color=fg:#c9c7cd,bg:#141415,hl:#f0c5a9
+    --color=fg:#c9c7cd,bg:#0a0a0a,hl:#f0c5a9
     --color=fg+:#efeae7,bg+:#27272a,hl+:#f0c5a9
     --color=info:#ea83a5,prompt:#ea83a5,pointer:#ea83a5
     --color=marker:#85b5ba,spinner:#85b5ba,header:#85b5ba'

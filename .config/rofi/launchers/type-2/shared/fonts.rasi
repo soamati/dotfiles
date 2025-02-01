@@ -8,5 +8,5 @@
  **/
 
 * {
-    font: "MesloLGM Nerd Font 11";
+  font: "SpaceMono Nerd Font 12";
 }
