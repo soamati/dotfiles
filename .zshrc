@@ -95,7 +95,9 @@ if [ -f "$LFCD" ]; then
 fi
 
 # keybindings
-bindkey '^ ' autosuggest-accept
+bindkey '^I' autosuggest-accept
+bindkey '^L' kill-whole-line
+bindkey '^ ' expand-or-complete
 bindkey '^]' forward-word
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
