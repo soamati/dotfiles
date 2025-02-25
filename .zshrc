@@ -107,7 +107,7 @@ eval "$(starship init zsh)"
 
 export PAGER="moar --quit-if-one-screen --no-clear-on-exit --statusbar=bold"
 
-# source "$HOME/.zshrc_private"
+source "$HOME/.zshrc_private"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/path.zsh.inc' ]; then . '/home/mr/dev/gcloud-setup/google-cloud-sdk/path.zsh.inc'; fi
