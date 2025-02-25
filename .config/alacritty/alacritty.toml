@@ -1,0 +1,30 @@
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+offset.x = 0  # For letter spacing (default: 0)
+offset.y = 0  # For line spacing (default: 0)
+
+[font.bold]
+family = "MesloLGM Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "MesloLGM Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "MesloLGM Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGM Nerd Font"
+style = "Regular"
+
+[window.padding]
+x = 0
+y = 0
+
+[general]
+import = ["/home/mr/.config/alacritty/oldworld.toml"]
