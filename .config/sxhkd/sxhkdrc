@@ -8,13 +8,13 @@ super + Return
 
 # program launcher
 super + backslash
-	/home/mr/.config/rofi/launch.sh
+	/home/anton/.config/rofi/launch.sh
 
 super + period
-	/home/mr/.config/rofi/launch-emoji.sh
+	/home/anton/.config/rofi/launch-emoji.sh
 
 super + End
-	/home/mr/.config/rofi/launch-powermenu.sh
+	/home/anton/.config/rofi/launch-powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape

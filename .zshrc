@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -33,8 +31,6 @@ plugins=(
 # yay jq
 # yay fx
 # yay yh-bin
-
-source $ZSH/oh-my-zsh.sh
 
 alias gcm="git commit -m"
 alias hc="echo -n > $HOME/.zsh_history"
@@ -97,10 +93,10 @@ fi
 # keybindings
 bindkey '^I' autosuggest-accept
 bindkey '^L' kill-whole-line
-bindkey '`' expand-or-complete
+bindkey '^ ' expand-or-complete
 bindkey '^]' forward-word
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export ZED_KEYRING_PASSWORD=""
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -111,10 +107,12 @@ eval "$(starship init zsh)"
 
 export PAGER="moar --quit-if-one-screen --no-clear-on-exit --statusbar=bold"
 
-source "$HOME/.zshrc_private"
+# source "$HOME/.zshrc_private"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/path.zsh.inc' ]; then . '/home/mr/dev/gcloud-setup/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mr/dev/gcloud-setup/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval "$(zoxide init zsh)"
