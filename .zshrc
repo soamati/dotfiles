@@ -97,7 +97,7 @@ fi
 # keybindings
 bindkey '^I' autosuggest-accept
 bindkey '^L' kill-whole-line
-bindkey '^ ' expand-or-complete
+bindkey '`' expand-or-complete
 bindkey '^]' forward-word
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -105,6 +105,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export ZED_KEYRING_PASSWORD=""
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export KUBE_EDITOR=vim
+export EDITOR=vim
 
 eval "$(starship init zsh)"
 
