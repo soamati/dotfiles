@@ -1,4 +1,5 @@
 #! /bin/sh
+brightnessctl set 25% &
 picom &
 nitrogen --restore &
 
