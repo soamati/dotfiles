@@ -1,0 +1,134 @@
+format = '$all'
+add_newline = false
+
+[directory]
+style = 'cyan'
+
+[gcloud]
+disabled = true
+
+[username]
+show_always = false
+
+[hostname]
+ssh_only = true
+
+[cmd_duration]
+disabled = true
+
+[sudo]
+disabled = false
+
+[character]
+format = '$symbol '
+vimcmd_symbol = '[v](bold green)'
+vimcmd_replace_one_symbol = '[v](bold purple)'
+vimcmd_replace_symbol = '[v](bold purple)'
+vimcmd_visual_symbol = '[v](bold yellow)'
+
+[git_status]
+style = 'green'
+format = '[$all_status$ahead_behind]($style)'
+stashed = '[*$count](green)'
+
+[git_metrics]
+disabled = false
+added_style = 'green'
+deleted_style = 'red'
+
+[git_branch]
+style = 'purple'
+symbol = ' '
+truncation_length = 24
+
+[package]
+disabled = true
+
+[bun]
+disabled = true
+[buf]
+disabled = true
+[cmake]
+disabled = true
+[cobol]
+disabled = true
+[crystal]
+disabled = true
+[daml]
+disabled = true
+[dart]
+disabled = true
+[deno]
+disabled = true
+[dotnet]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[erlang]
+disabled = true
+[fennel]
+disabled = true
+[gleam]
+disabled = true
+[golang]
+disabled = true
+[gradle]
+disabled = true
+[haxe]
+disabled = true
+[helm]
+disabled = true
+[java]
+disabled = true
+[julia]
+disabled = true
+[kotlin]
+disabled = true
+[lua]
+disabled = true
+[meson]
+disabled = true
+[nim]
+disabled = true
+[nodejs]
+disabled = true
+[ocaml]
+disabled = true
+[opa]
+disabled = true
+[perl]
+disabled = true
+[php]
+disabled = true
+[pulumi]
+disabled = true
+[purescript]
+disabled = true
+[python]
+disabled = true
+[quarto]
+disabled = true
+[raku]
+disabled = true
+[red]
+disabled = true
+[rlang]
+disabled = true
+[ruby]
+disabled = true
+[rust]
+disabled = true
+[solidity]
+disabled = true
+[typst]
+disabled = true
+[swift]
+disabled = true
+[vagrant]
+disabled = true
+[vlang]
+disabled = true
+[zig]
+disabled = true
