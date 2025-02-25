@@ -1,0 +1,22 @@
+{
+  "multiline-comment-js": {
+    "prefix": "mc",
+    "body": ["/* $1 */"]
+  },
+  "multiline-comment-react": {
+    "prefix": "mcr",
+    "body": ["{/* $1 */}"]
+  },
+  "js-arrow-function": {
+    "prefix": "afn",
+    "body": ["() => {$1}"]
+  },
+  "js-json-log": {
+    "prefix": "lj",
+    "body": ["console.log(JSON.stringify({$1}, null, 2))"]
+  },
+  "js-json-log-inline": {
+    "prefix": "lji",
+    "body": ["console.log(JSON.stringify({$1}))"]
+  }
+}
