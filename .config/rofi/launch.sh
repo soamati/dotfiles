@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 dir="$HOME/.config/rofi/launchers/type-2"
 theme='style-1'
 
