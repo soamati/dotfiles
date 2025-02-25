@@ -149,6 +149,7 @@
 	pipx
 	python311
 	gcc-unwrapped
+  xsel
   ];
   
   fonts.packages = with pkgs; [ nerdfonts ];
