@@ -115,4 +115,10 @@ if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/path.zsh.inc' ]; then . '/ho
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mr/dev/gcloud-setup/google-cloud-sdk/completion.zsh.inc'; fi
 
+# mcfly
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_FUZZY=2
+export MCFLY_INTERFACE_VIEW=BOTTOM
+
 eval "$(zoxide init zsh)"
+eval "$(mcfly init zsh)"
