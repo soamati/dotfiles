@@ -1,4 +1,17 @@
 return {
+  -- Using lazy.nvim
+  {
+    "metalelf0/black-metal-theme-neovim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("black-metal").setup({
+        -- optional configuration here
+        theme = "dark-funeral",
+      })
+      require("black-metal").load()
+    end,
+  },
   {
     "soamati/oldworld.nvim",
     lazy = false,
