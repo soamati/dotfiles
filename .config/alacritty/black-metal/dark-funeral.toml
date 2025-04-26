@@ -16,24 +16,24 @@ foreground = '#c1c1c1'
 # Normal colors
 [colors.normal]
 black = '#111113'
-red = '#5f8787'
-green = '#c1c1c1'
-yellow = '#888888'
-blue = '#aaaaaa'
-magenta = '#999999'
+red =     '#875f5f'  # muted blood red
+green =   '#5f8787'  # your provided green
+yellow =  '#87875f'  # antique gold / dull brass
+blue =    '#5f5f87'  # cold deep blue
+magenta = '#875f87'  # grim purple-pink
 cyan = '#fbcb97'
-white = '#c1c1c1'
+white =   '#c1c1c1'  # your provided white
 
 # Bright colors
 [colors.bright]
-black = '#505050'
-red = '#5f8787'
-green = '#c1c1c1'
-yellow = '#888888'
-blue = '#aaaaaa'
-magenta = '#d0dfee'
+black = '#111113'
+red =     '#875f5f'  # muted blood red
+green =   '#5f8787'  # your provided green
+yellow =  '#87875f'  # antique gold / dull brass
+blue =    '#5f5f87'  # cold deep blue
+magenta = '#875f87'  # grim purple-pink
 cyan = '#fbcb97'
-white = '#c1c1c1'
+white =   '#c1c1c1'  # your provided white
 
 # Indexed Colors
 [[colors.indexed_colors]]
