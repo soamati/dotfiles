@@ -9,7 +9,7 @@ return {
         -- optional configuration here
         theme = "dark-funeral",
       })
-      require("black-metal").load()
+      -- require("black-metal").load()
     end,
   },
   {
