@@ -37,6 +37,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias gcm="git commit -m"
+alias 'gc!'="git commit --no-verify -m"
+alias 'gp!'="git push --no-verify"
 alias hc="echo -n > $HOME/.zsh_history"
 alias lg="lazygit"
 alias cl="clear"
@@ -49,6 +51,7 @@ alias lad="lazydocker"
 alias j="z"
 alias clock="tty-clock -S -c -C 7"
 alias ls="eza --color=always --long --git --no-time --icons=always"
+alias kg="kill \$(netstat -tulnp | grep 4000 | awk '{print \$7}' | cut -d'/' -f1)"
 
 alias kubectl=kubecolor
 compdef kubecolor=kubectl
