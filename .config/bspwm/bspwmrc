@@ -5,6 +5,9 @@ nitrogen --restore &
 caffeine-indicator &
 caffeine start --activate &
 
+# auto-lock using slock after idle
+# xss-lock -- slock &
+
 pgrep -x sxhkd >/dev/null || sxhkd &
 
 bspc monitor DisplayPort-2 -d 1 2 3 4 5
