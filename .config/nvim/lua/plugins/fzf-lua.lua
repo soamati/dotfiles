@@ -1,7 +1,7 @@
 return {
   {
     "ibhagwan/fzf-lua",
-    dependencies = { "echasnovski/mini.icons" },
+    dependencies = { "nvim-mini/mini.icons" },
     opts = {
       keymap = {
         builtin = {
