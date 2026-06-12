@@ -17,4 +17,13 @@ return {
       scroll = { enabled = false },
     },
   },
+  {
+    "folke/noice.nvim",
+    opts = function(_, opts)
+      opts.cmdline = opts.cmdline or {}
+      opts.cmdline.format = opts.cmdline.format or {}
+      opts.cmdline.format.cmdline = opts.cmdline.format.cmdline or {}
+      opts.cmdline.format.cmdline.lang = false
+    end,
+  },
 }
