@@ -112,7 +112,7 @@ export EDITOR=vim
 
 eval "$(starship init zsh)"
 
-export PAGER="moar --quit-if-one-screen --no-clear-on-exit --statusbar=bold"
+export PAGER="moor --quit-if-one-screen --no-clear-on-exit --statusbar=bold"
 
 source "$HOME/.zshrc_private"
 
