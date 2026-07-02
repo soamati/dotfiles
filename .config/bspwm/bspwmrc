@@ -10,14 +10,26 @@ caffeine start --activate &
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-bspc monitor DisplayPort-2 -d 1 2 3 4 5
-bspc monitor HDMI-A-0 -d 0
+# New OLED as primary, old primary as secondary.
+xrandr \
+  --output DisplayPort-1 --primary --auto \
+  --output DisplayPort-2 --auto --rotate right --right-of DisplayPort-1 \
+  --output HDMI-A-0 --off
+
+# Remove the disconnected HDMI monitor from bspwm so its desktop does not
+# leak into the primary monitor's workspace list.
+if bspc query -M --names | grep -qx HDMI-A-0; then
+  bspc monitor HDMI-A-0 -r
+fi
+
+bspc monitor DisplayPort-1 -d 1 2 3 4 5
+bspc monitor DisplayPort-2 -d 0
 
 bspc config border_width 1
 bspc config window_gap 0
 
-bspc config -m DisplayPort-2 window_gap 0
-bspc config -m HDMI-A-0 window_gap 1
+bspc config -m DisplayPort-1 window_gap 0
+bspc config -m DisplayPort-2 window_gap 1
 
 bspc config split_ratio 0.5
 
