@@ -1,6 +1,5 @@
 #! /bin/sh
 picom &
-nitrogen --restore &
 
 caffeine-indicator &
 caffeine start --activate &
@@ -10,34 +9,9 @@ caffeine start --activate &
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-# Wait for the second DP output to appear before applying the final layout.
-i=0
-while [ "$i" -lt 10 ]; do
-  if xrandr --query | grep -q '^DisplayPort-2 connected'; then
-    break
-  fi
-  i=$((i + 1))
-  sleep 1
-done
+"$HOME/.config/bspwm/layout-monitors.sh"
 
-# New OLED as primary, old primary as secondary.
-xrandr \
-  --output DisplayPort-1 --primary --mode 2560x1440 --rate 120.00 \
-  --output DisplayPort-2 --mode 1920x1080 --rate 120.00 --rotate right --right-of DisplayPort-1 \
-  --output HDMI-A-0 --off
-
-# Remove the disconnected HDMI monitor from bspwm so its desktop does not
-# leak into the primary monitor's workspace list.
-if bspc query -M --names | grep -qx HDMI-A-0; then
-  bspc monitor HDMI-A-0 -r
-fi
-
-bspc monitor DisplayPort-1 -d 1 2 3 4 5
-bspc monitor DisplayPort-2 -d 0
-
-if bspc query -D -m DisplayPort-1 --names | grep -qx Desktop; then
-  bspc desktop Desktop -r
-fi
+nitrogen --restore &
 
 bspc config border_width 1
 bspc config window_gap 0
