@@ -1,0 +1,53 @@
+onboarding = false
+
+[theme]
+name = "terminal"
+
+[keys]
+prefix = "ctrl+w"
+reload_config = "prefix+r"
+
+new_tab = "prefix+c"
+previous_tab = "prefix+p"
+next_tab = "prefix+n"
+switch_tab = "prefix+1..9"
+
+split_horizontal = "prefix+minus"
+split_vertical = "prefix+shift+backslash"
+close_pane = "prefix+x"
+zoom = "prefix+m"
+copy_mode = "prefix+["
+
+focus_pane_left = ["prefix+h", "ctrl+h"]
+focus_pane_down = ["prefix+j", "ctrl+j"]
+focus_pane_up = ["prefix+k", "ctrl+k"]
+focus_pane_right = ["prefix+l", "ctrl+l"]
+
+swap_pane_left = ""
+swap_pane_down = ""
+swap_pane_up = ""
+swap_pane_right = ""
+
+[[keys.command]]
+key = "prefix+shift+h"
+type = "shell"
+command = '"$HERDR_BIN_PATH" pane resize --pane "$HERDR_ACTIVE_PANE_ID" --direction left --amount 4'
+description = "resize pane left"
+
+[[keys.command]]
+key = "prefix+shift+j"
+type = "shell"
+command = '"$HERDR_BIN_PATH" pane resize --pane "$HERDR_ACTIVE_PANE_ID" --direction down --amount 4'
+description = "resize pane down"
+
+[[keys.command]]
+key = "prefix+shift+k"
+type = "shell"
+command = '"$HERDR_BIN_PATH" pane resize --pane "$HERDR_ACTIVE_PANE_ID" --direction up --amount 4'
+description = "resize pane up"
+
+[[keys.command]]
+key = "prefix+shift+l"
+type = "shell"
+command = '"$HERDR_BIN_PATH" pane resize --pane "$HERDR_ACTIVE_PANE_ID" --direction right --amount 4'
+description = "resize pane right"
