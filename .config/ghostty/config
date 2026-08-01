@@ -1,0 +1,8 @@
+font-family = Maple Mono NF
+font-feature = calt, liga, cv01, cv02, cv33, cv34, cv35, cv36, cv61, cv62, ss05, ss06, ss07, ss08
+font-size = 14
+theme = oldworld
+cursor-style = block
+shell-integration-features = no-cursor
+cursor-style-blink = false
+window-decoration = false
