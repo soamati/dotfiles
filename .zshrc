@@ -132,3 +132,6 @@ if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/path.zsh.inc' ]; then . '/ho
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/mr/dev/gcloud-setup/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/mr/dev/gcloud-setup/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Pi
+export PATH="/home/mr/.local/share/pi-node/node-v22.23.2-linux-x64/bin:$PATH"
